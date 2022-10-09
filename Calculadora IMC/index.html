@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora IMC</title>
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header></header>
     <main class="container">
-        <h1>Olá</h1>
         <section class="formulario-input">
             <h1 class="Titulo">Calculadora IMC</h1>
             <form class="containerForm">
@@ -27,7 +28,8 @@
             </form>
         </section>
         <section class="campo-resposta">
-            <input type="text" class="inputResposta" id="resultado">
+            <span>Seu IMC:</span>
+            <strong id="resultado"></strong>
         </section>
     </main>
     <script src="main.js"></script>

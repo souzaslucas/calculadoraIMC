@@ -42,17 +42,17 @@ function pulaLinha(){
 
 function mostraResultado(caso){
     var campoResultado = document.getElementById('resultado');
-    if(caso < 18){
-        campoResultado.value = "Seu IMC é " + caso + ". Você está A BAIXO DO PESO";
+    if (caso <= 18.5){
+        campoResultado.textContent =caso + " - condição: A BAIXO DO PESO"
     }if (caso >= 18.5 && caso <= 24.9){
-        campoResultado.value = "Seu IMC é " + caso + ". Você está com o peso NOMARL";
+        campoResultado.textContent = caso + " - Peso NORMAL"
     }if (caso >= 25 && caso <= 29.9){
-        campoResultado.value = "Seu IMC é " + caso + ". Seu caso é de Sobrepeso";
+        campoResultado.textContent = caso + " - Condição: SOBREPESO";
     }if (caso >= 30 && caso <= 34.9){
-        campoResultado.value = "Seu IMC é " + caso + ". Seu caso é de Obesidade classe I";
+        campoResultado.textContent = caso + " - Condição OBESIDADE classe I";
     }if (caso >= 35 && caso <= 39.0){
-        campoResultado.value = "Seu IMC é " + caso + ". Seu caso é de Obesidade classe II";
+        campoResultado.textContent = caso + " - OBESIDADE classe II";
     }if( caso > 39.9){
-        campoResultado.value = "Seu IMC é " + caso + ". Seu caso é de Obesidade classe III";
+        campoResultado.textContent = caso + " - OBESIDADE classe III";
     }
 }
