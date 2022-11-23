@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+
+body{
+    font-family: 'Roboto Mono', monospace;
+    background: #001425;
+    color: #FFFFFF;
+}
+
+header{
+    height: 100px;
+    background: #122F5F;
+    margin-bottom: 25px;
+}
+
+.container{
+    display: grid;
+    justify-content: center;
+    grid-auto-rows: 350px;
+}
+
+.formulario-input{
+    align-items: center;
+    display: grid;
+    height: 100px;
+    justify-items: center;
+    
+}
+
+.Titulo{
+    padding: 30px;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.containerForm{
+    display: grid;
+    width: 300px;
+    align-items: center;
+    height: 175px;
+}
+
+.peso{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.altura{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.btn {
+    padding: 10.5px 21px;
+    border-radius: 8px;
+    text-shadow: rgba(0,0,0,.4) 0 1px 0;
+    font-size: 18px;
+}
+ .btn:hover {
+    border-top-color: #28597a;
+    background: #28597a;
+    color: #000000;
+}
+ .btn:active {
+    border-top-color: #ff8c00;
+    background: #ff8c00;
+}
+
+.campo-resposta{
+    display: grid;
+    align-items: start;
+    height: 88px;
+    justify-items: center;
+    background: chocolate;
+    padding: 20px;
+    border-radius: 20px;
+}
+ span{
+    font-weight: 600;
+    font-size: 29px;
+ }
