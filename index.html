@@ -9,28 +9,30 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header></header>
+    <header class="titulo">
+        <h1 class="Titulo_pagina">CALCULE SEU IMC</h1>
+    </header>
     <main class="container">
-        <section class="formulario-input">
-            <h1 class="Titulo">Calculadora IMC</h1>
-            <form class="containerForm">
+        <div class="box-form">
+            <form class="container-form">
                 <div class="peso">
-                    <label class="labelPeso">Qual é o seu peso?</label>
-                    <input type="text" class="inputPeso" id="inputPeso">
-                    <br>
+                    <label class="labelPeso">Peso</label>
+                    <input type="text" class="inputPeso" id="inputPeso" placeholder="Ex. 80.0">
                 </div>
                 <div class="altura">
-                    <label class="labelAltura"> Qual é a sua altura?</label>
-                    <input type="text" class="inputAltura" id="inputAltura">
-                    <br>
+                    <label class="labelAltura"> Altura</label>
+                    <input type="text" class="inputAltura" id="inputAltura" placeholder="Ex: 1.70">
                 </div>
                 <button type="button" class="btn">Calcular</button>
             </form>
-        </section>
-        <section class="campo-resposta">
-            <span>Seu IMC:</span>
-            <strong id="resultado"></strong>
-        </section>
+        
+            <div class="campo-result">
+                <p class="texto-1">Você está</p>
+                <p class="msg" id="msg"></p>
+                <p class="resultado" id="resultado"></p>
+
+            </div>
+        </div>
     </main>
     <script src="main.js"></script>
 </body>

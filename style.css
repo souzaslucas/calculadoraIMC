@@ -1,82 +1,116 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;700;800&display=swap');
 
 body{
-    font-family: 'Roboto Mono', monospace;
-    background: #001425;
-    color: #FFFFFF;
+    background-color: #FCFCFC;
+    font-family: 'Open Sans', sans-serif;
 }
 
-header{
-    height: 100px;
-    background: #122F5F;
-    margin-bottom: 25px;
+h1{
+    display: flex;
+    justify-content: center;
+    margin: 1em 0;
+    font-size: 54px;
+    font-weight: 700;
 }
 
 .container{
-    display: grid;
+    display: flex;
     justify-content: center;
-    grid-auto-rows: 350px;
 }
 
-.formulario-input{
+.box-form{
+    padding: 31px;
+    background-color: #055E47;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    display: grid;
-    height: 100px;
-    justify-items: center;
-    
+    row-gap: 35px;
 }
 
-.Titulo{
-    padding: 30px;
-    font-size: 50px;
-    font-weight: 600;
-}
-
-.containerForm{
-    display: grid;
-    width: 300px;
-    align-items: center;
-    height: 175px;
+.container-form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+    padding: 0.5em;
 }
 
 .peso{
     display: flex;
-    flex-direction: column;
-    gap: 12px;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
 }
 
 .altura{
     display: flex;
-    flex-direction: column;
-    gap: 12px;
+    justify-content: space-between;
+    gap: 23px;
+    align-items: center;
+}
+.labelPeso, .labelAltura{
+    font-size: 25px;
+    font-weight: 300;
+    color: #77F9D8;
+    padding-right: 30px;
 }
 
-.btn {
-    padding: 10.5px 21px;
-    border-radius: 8px;
-    text-shadow: rgba(0,0,0,.4) 0 1px 0;
-    font-size: 18px;
-}
- .btn:hover {
-    border-top-color: #28597a;
-    background: #28597a;
-    color: #000000;
-}
- .btn:active {
-    border-top-color: #ff8c00;
-    background: #ff8c00;
+.inputAltura, .inputPeso{
+    border: transparent;
+    background: #F7FFFD;
+    box-shadow: 2px 4px 25px 2px rgb(0 0 0 / 25%);
+    border-radius: 25px;
+    padding:10px;
+    outline: none;
 }
 
-.campo-resposta{
-    display: grid;
-    align-items: start;
-    height: 88px;
-    justify-items: center;
-    background: chocolate;
+.inputAltura::placeholder, .inputPeso::placeholder{
+    text-align: end;
+    font-size: 15px;
+    padding-right: 15px;
+    opacity: 50%;
+    background-image: ;
+}
+.btn{
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    padding: 11px 60px;
+    border: transparent;
+    background: #77F9D8;
+    box-shadow: 2px 4px 25px 2px rgb(0 0 0 / 25%);
+    border-radius: 100px;
+    margin: 28px 0 0 0;
+    outline: none;
+}
+.campo-result{
+    padding: 0 0 1em 0;
+}
+
+.campo-result .texto-1{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    text-transform: uppercase;
+    line-height: 22px;
+    color: #add1c8;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.msg{
+    font-size: 30px;
+    font-weight: 800;
     padding: 20px;
-    border-radius: 20px;
+    text-align: center;
+    color: #D1FEF3;
 }
- span{
-    font-weight: 600;
-    font-size: 29px;
- }
+
+.resultado{
+    font-size: 20px;
+    font-weight: 300;
+    padding: 0 20px;
+    text-align: center;
+    color: #D1FEF3;
+}

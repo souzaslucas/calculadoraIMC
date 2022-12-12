@@ -42,17 +42,9 @@ function pulaLinha(){
 
 function mostraResultado(caso){
     var campoResultado = document.getElementById('resultado');
-    if (caso <= 18.5){
-        campoResultado.textContent =caso + " - condição: A BAIXO DO PESO"
-    }if (caso >= 18.5 && caso <= 24.9){
-        campoResultado.textContent = caso + " - Peso NORMAL"
-    }if (caso >= 25 && caso <= 29.9){
-        campoResultado.textContent = caso + " - Condição: SOBREPESO";
-    }if (caso >= 30 && caso <= 34.9){
-        campoResultado.textContent = caso + " - Condição OBESIDADE classe I";
-    }if (caso >= 35 && caso <= 39.0){
-        campoResultado.textContent = caso + " - OBESIDADE classe II";
-    }if( caso > 39.9){
-        campoResultado.textContent = caso + " - OBESIDADE classe III";
+    var campoMensagem = document.getElementById('msg')
+    if (caso <= 50){
+        campoResultado.textContent =caso;
+        campoMensagem.textContent = "A BAIXO DO PESO";
     }
 }
